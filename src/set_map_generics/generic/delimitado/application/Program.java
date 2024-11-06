@@ -1,4 +1,4 @@
-package set_map_generics.generic.exemplo2.application;
+package set_map_generics.generic.delimitado.application;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import set_map_generics.generic.exemplo2.entities.Product;
-import set_map_generics.generic.exemplo2.services.CalculationService;
+import set_map_generics.generic.delimitado.entities.Product;
+import set_map_generics.generic.delimitado.services.CalculationService;
 
 public class Program {
 

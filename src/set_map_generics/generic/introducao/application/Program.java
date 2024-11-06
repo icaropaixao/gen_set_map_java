@@ -1,8 +1,8 @@
-package set_map_generics.generic.exemplo1.application;
+package set_map_generics.generic.introducao.application;
 
 import java.util.Scanner;
 
-import set_map_generics.generic.exemplo1.services.PrintService;
+import set_map_generics.generic.introducao.services.PrintService;
 
 public class Program {
 

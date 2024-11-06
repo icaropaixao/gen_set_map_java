@@ -1,4 +1,12 @@
-package set_map_generics.generic.exemplo2.entities;
+package set_map_generics.generic.delimitado.entities;
+
+
+// Generic delimitado exemplo
+/*
+Esse é um exemplo de delimitação superior
+ onde Product implementa Comparable<Product>,
+  permitindo comparar e ordenar produtos pelo preço.
+ */
 
 public class Product implements Comparable<Product> {
 
