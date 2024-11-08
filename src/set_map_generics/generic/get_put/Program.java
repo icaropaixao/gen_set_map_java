@@ -42,6 +42,8 @@ public class Program {
         outra lista que pode ser mais genérica que a primeira */
 
         List<Integer> myInts = Arrays.asList(1, 2, 3, 4);
+
+
         List<Double> myDoubles = Arrays.asList(3.14, 6.28);
         List<Object> myObjs = new ArrayList<Object>();
         copy(myInts, myObjs);
