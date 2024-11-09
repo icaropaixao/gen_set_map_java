@@ -8,9 +8,5 @@ public class ProgramFortuna {
     public static void main(String[] args) {
 
         List<BigInteger> numerosPremiados = new ArrayList<>();
-
-        
-
-
     }
 }
