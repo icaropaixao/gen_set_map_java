@@ -1,5 +1,11 @@
 package set_map_generics.set.introducao.hash;
+ import com.sun.source.tree.Tree;
+
+ import java.util.LinkedHashSet;
  import java.util.Set;
+ import java.util.TreeSet;
+ import java.util.HashSet;
+
 
 // SET EM JAVA
     /*
@@ -14,7 +20,7 @@ package set_map_generics.set.introducao.hash;
  • retainAll(other) - interseção: remove do conjunto os elementos não contitos em other
  • removeAll(other) - diferença: remove do conjunto os elementos contidos em other
      */ // metodos importantes
-public class HashSet {
+public class HashSett {
     public static void main(String[] args) {
         //Como as coleções Hash testam igualdade ?
         /*
@@ -29,10 +35,12 @@ public class HashSet {
 
         // • HashSet- mais rápido (operações O(1) em tabela hash) e não ordenado
         // exemplo
-        Set<String> set = new java.util.HashSet<>();
+        Set<String> set = new TreeSet<>();
+
         set.add("TV");
         set.add("Notebook");
         set.add("Tablet");
+
         System.out.println(set.contains("Notebook"));
 
         for (String p : set) {
