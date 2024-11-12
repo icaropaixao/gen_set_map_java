@@ -66,11 +66,7 @@ public class Program {
             // exibe a mensagem de erro correspondente.
             System.out.println("Error: " + e.getMessage());
         }
-
-
         scan.close();
-
-
 
     }
 }
