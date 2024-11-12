@@ -32,26 +32,42 @@ public class Program {
         System.out.print("Digite o caminho do arquivo: ");
         String path = scan.nextLine();
 
+        // Usa um bloco try-with-resources para garantir que o BufferedReader seja fechado automaticamente após o uso.
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 
+            // Cria um conjunto (Set) de LogEntry para armazenar registros únicos.
             Set<LogEntry> set = new HashSet<>();
 
+            // Lê a primeira linha do arquivo.
             String line = br.readLine();
+
+            // Continua lendo o arquivo enquanto houver linhas (ou seja, enquanto line != null).
             while (line != null) {
 
+                // Divide a linha em partes usando um espaço como delimitador.
+                // A primeira parte é o nome de usuário e a segunda parte é o timestamp (data/hora).
                 String[] fields = line.split(" ");
-                String username = fields[0];
-                Date moment = Date.from(Instant.parse(fields[1]));
+                String username = fields[0]; // Extrai o nome de usuário.
+                Date moment = Date.from(Instant.parse(fields[1])); // Converte a string de data/hora para o tipo Date.
 
+                // Adiciona um novo registro de log no conjunto (Set).
+                // Como é um Set, registros duplicados serão automaticamente ignorados.
                 set.add(new LogEntry(username, moment));
 
+                // Lê a próxima linha do arquivo.
                 line = br.readLine();
             }
+
+            // Exibe o número total de usuários únicos que foram registrados no conjunto.
             System.out.println("Total users: " + set.size());
 
         } catch (IOException e) {
+            // Caso ocorra um erro de entrada/saída (como arquivo não encontrado),
+            // exibe a mensagem de erro correspondente.
             System.out.println("Error: " + e.getMessage());
         }
+
+
         scan.close();
 
 
