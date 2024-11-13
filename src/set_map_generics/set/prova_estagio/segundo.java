@@ -1,4 +1,4 @@
-package set_map_generics.set.testee;
+package set_map_generics.set.prova_estagio;
 
 public class segundo {
     public static void main(String[] args) {
