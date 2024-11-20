@@ -23,7 +23,7 @@ Alguns métodos importantes
  • Se equals e hashCode não existir, é usada comparação de ponteiros
  • clear()
  • size()
- • keySet() - retorna um Set<K>
+ • keySet() - retorna um Set<Key>
  • values() - retornaa um Collection<V>
 
 
